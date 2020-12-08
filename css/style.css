@@ -1,0 +1,234 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+*,*:before,*:after{
+    box-sizing: border-box;
+}
+
+.wrap{
+    width: 1000px;
+    margin: 0 auto;
+}
+.sns{
+    background: #f6f6f6;
+}
+.sns ul{
+    display: flex;
+    justify-content: flex-end;
+    padding: 8px 5px;
+}
+.sns a{
+    text-decoration: none;
+    padding: 0 10px;
+    font-size: 14px;
+}
+.sns img{
+    padding-right: 4px;
+}
+.FB{
+    border-right: solid  1px #cccccc;
+}
+.FB a{
+    color: #4460a0;
+}
+.twitter a{
+    color: #00aaec;
+}
+.sns a:hover{
+    text-decoration: underline;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.header h1 a{
+    background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png);
+    display: block;
+    width: 224px;
+    height: 50px;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+.menu a{
+    color: #00cc99;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 0 20px 13px 20px;
+}
+.menu a:hover{
+    border-bottom: 5px solid #00cc99;
+}
+.banner{
+    background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/banner.png);
+    height: 346px;
+    display: flex;
+    align-items: center;
+}
+.banner h2{
+    font-size: 32px;
+    color: white;
+    line-height: 48px;
+    padding: 40px 24px;
+    background: rgba(0,0,0,0.2);
+    width: 100%;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 28px 16px 60px 22px;
+}
+.footer a{
+    text-decoration: none;
+    color: #e12d80;
+    font-size: 14px;
+    line-height: 26px;
+}
+.footer a:hover{
+    text-decoration: underline;
+}
+.coursebox{
+    display: flex;
+    margin: 64px 0;
+    justify-content: space-around;
+}
+.courseimg{
+    height: 175px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.course{
+    width: 302px;
+    box-shadow: 1px 3px 5px #e4e4e4;
+    padding: 0 20px 16px 20px;
+}
+.course h2{
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 12px;
+}
+.course p{
+    font-size: 14px;
+    line-height: 24px;
+}
+.course ul{
+    list-style-type: square;
+    font-size: 14px;
+    line-height: 24px;
+    padding-left: 28px;
+}
+.difference{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+.difference h2{
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+.difference span{
+    color: #00cc99;
+}
+.difference tr ,.difference th ,.difference td{
+    font-size: 14px;
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    width: 210px;
+    padding: 8px 0 12px 22px;
+} 
+.difference th{
+    background: #f7f7f7;
+    font-weight: bold;
+}
+.information{
+    background:linear-gradient(#00654d,#009872);
+    margin-top: 62px;
+}
+.information h2{
+    color: #fff;
+    font-size: 24px;
+    line-height: 38px;
+    text-align: center;
+    padding: 40px 0 34px 0;
+}
+.information form{
+    display: flex;
+}
+.information textarea{
+    width: 462px;
+    height: 246px;
+    margin: 0 40px 30px 20px;
+    border-radius: 3px;
+    border:none;
+}
+.detail{
+    color: #fff;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+}
+.information input{
+    width: 462px;
+    margin: 6px 20px 14px 0;
+    padding: 10px;
+    border-radius: 3px;
+    border:none;
+}
+.detail .submit{
+    width: 72px;
+    cursor: pointer;
+    color: #fff;
+    background: #00cc99;
+    align-self: flex-end;
+}
